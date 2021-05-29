@@ -350,13 +350,136 @@
 
    <!-- HTML 5 -->
 
+   <h1> HTML5 </h1>
+            <h3> Título menos importante </h3>
+   
+      
+         <!DOCTYPE HTML>
+   <html>
+      <head>
+      </head>
+      <body>
+         <header>
+            <h1> Video </h1>
+            <h3> Videos </h3>
+
+         </header>
+         <meta charset = "UTF-8">
+
+
+          <!-- Videos En HTML -->
+
+          <video controls>
+             <source src="video.mp4" type="Vidfeo/mp4">
+             <source src="Video.ogg" type="video/ogg">
+          </video>
+
+          <!-- Atributos De Video -->
+
+          <video controls>
+            <source src="video.mp4" type="Vidfeo/mp4">
+            <source src="Video.ogg" type="video/ogg">
+            No es compatible con tu navegador
+         </video>
+
+          <!-- Barra de progreso -->
+
+         <cente> Estado: <progress min="0" max="100" value="35"></progress></cente>  
+         
+         <label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
+
+          <!-- Almacenamiento Web HTML5 -->
+          <!-- Trabajar con valores-->
+
+  <!-- Almacenamiento de un valor: 
+localStorage .setItem ("clave1", "valor1");
+
+Obtener un valor:
+
+// esto imprimirá la 
+alerta de valor
+ (localStorage. getItem ("key1"));
+
+ Eliminar un valor:
+
+ localStorage .removeItem ("clave1");
+
+ Eliminar todos los valores:
+
+ localStorage .clear ();
+-->
+       <!-- navigator.geolocation.getCurrentPosition (); --> 
+       
+       <!-- Hacer que los elementos se puedan arrastrar -->  
+
+       <img draggable = " true " />
+
+       
+ 
+       <!DOCTYPE HTML>
+       <html>
+          <head>
+          <script>
+       function allowDrop(ev) {
+           ev.preventDefault();
+       }
+       
+       function drag(ev) {
+           ev.dataTransfer.setData("text", ev.target.id);
+       }
+       
+       function drop(ev) {
+           ev.preventDefault();
+           var data = ev.dataTransfer.getData("text");
+           ev.target.appendChild(document.getElementById(data));
+       }
+          </script>
+          </head>
+       <body>
+       
+          <div id="box" ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          style="border:1px solid black; 
+          width:200px; height:200px"></div>
+       
+          <img id="image" src="sample.jpg" draggable="true"
+          ondragstart="drag(event)" width="150" height="50" alt="" />
+
+         <meta charset = "UTF-8">
+
+ <!-- Insertar Imagenes SVG --> 
+
+ <img src="image.svg" alt="" height="300" />
+
+ <!-- Dibujar un circulo --> 
+
+ <svg width = "1000" height = "1000">
+   <circle cx ="80" cy="80" r ="50" fill="green"></circle>
+   </svg>
+
+   <!-- Cuadrado -->
+   <svg width = "2000" height = "20000">
+      <rect widht = "300" height ="100"
+         x="20" y="20" fill = "green" />
+   </svg>
+
+  <!-- define un segmento de línea -->
+      
+  <svg width="600" height="600">
+   <line x1="500" yi="500" x2="200" y2="100"
+   style="stroke: white; stroke: turquoise; stroke: violet;">
+</line>
+</svg>
+
+
    <!DOCTYPE HTML>
    <html>
       <head>
       </head>
       <body>
          <header>
-            <h1> HTML5 </h1>
+            <h1> Audio </h1>
             <h3> Título menos importante </h3>
 
          </header>
@@ -413,40 +536,6 @@
             <audio controls> 
                <source src="audio.mp3" type="audio / mpeg">
                <source src="audio.ogg" type="audio / ogg">
-            </audio>
 
-   <!-- Atributos De Audio -->
-   <!-- Autamotco -->
+              
 
-   <audio controls autoplay>
-
-      <!-- Bucle -->
-
-      <audio controls autoplay loop>
-
-          <!-- Videos En HTML -->
-
-          <video controls>
-             <source src="video.mp4" type="Vidfeo/mp4">
-             <source src="Video.ogg" type="video/ogg">
-          </video>
-
-          <!-- Atributos De Video -->
-
-          <video controls>
-            <source src="video.mp4" type="Vidfeo/mp4">
-            <source src="Video.ogg" type="video/ogg">
-            No es compatible con tu navegador
-         </video>
-
-          <!-- Barra de progreso -->
-
-         <cente> Estado: <progress min="0" max="100" value="35"></progress></cente>  
-         
-         <cente><label for="file">File progress:</label>
-
-            <progress id="file" max="100" value="70"> 70% </progress>
-            </cente>
-
-      </body>
-   </html>
