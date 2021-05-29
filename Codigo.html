@@ -315,7 +315,7 @@
 
              <!-- La etiqueta <frame> -->
 
-           <frameset> framesetcols="100, 25%, *"> </frameset> </frameset>
+           <frameset>  </frameset> </frameset>
             <frameset rows="100, 25%, *"></frameset>
 
             <!-- La etiqueta <frame> -->
@@ -452,7 +452,7 @@ alerta de valor
 
  <img src="image.svg" alt="" height="300" />
 
- <!-- Dibujar un circulo --> 
+ <!-- Dibujar un circulo -->
 
  <svg width = "1000" height = "1000">
    <circle cx ="80" cy="80" r ="50" fill="green"></circle>
@@ -496,6 +496,141 @@ width="120" height="100" viewBox="0 0 120 100">
           </rect>
        </svg>
 
+       <!-- Rutas -->
+
+       <svg width = "500" height="500">
+         <path d="M 0 0 L200 200 0 Z" style="stroke:rgb(5, 0, 0); fill: none;"/>
+      </svg> Camino.
+
+      <!-- Paths -->
+
+      <svg width = "500" height="500">
+         <path d="M 0 0 L200 200 0 Z" style="stroke:rgb(5, 0, 0); fill: none;"/>
+      </svg> 
+
+            <!-- Elemento <Canvas> -->
+
+         <canvas id="canvas1" width="200" height="100">
+         </canvas>
+         <html>
+ 
+   <head> </head>
+ 
+   <body>
+ <canvas id = "canvas1" 
+    width = "400" height = "300"> </canvas> 
+    <script>
+       var can = document.getElementById ("canvas1"); 
+      var ctx = can.getContext ("2d");
+   </script>
+    </body>
+ </html>
+
+            <!-- Formas De Dibujo -->
+
+            <script>
+         var c = document.getElementById ("lienzo1"); 
+      var ctx = can.getContext ("2d");
+               ctx. fillRect (20, 20, 100, 100);
+
+
+               var Lienzo = document.getElementById ("lienzo1"); 
+      var ctx = canvas.getContext ("2d");
+               ctx. fillStyle="rgba (0, 200, 0, 1)";
+               ctx.fillRect (36, 10, 22, 22);
+            </script>
+
+
+         <!-- Trabajando Con Canvas -->
+
+        <script>
+           ctx. font="negrita 22px Tahoma";
+            ctx. texAlign="inicio";
+            ctx. fillText("inicio", 10, 30);
+            ctx. Traducir (100, 150)
+            ctx. fillText ("Despues De Traducir", 10, 30)
+
+        </script>
+         
+         
+        <!-- The rotate Method -->
+
+      
+<p><script>
+
+    ctx.fillStyle="#FF0000";
+    ctx.fillRect(10,10, 100, 100);
+
+    ctx.rotate((Math.PI / 100)* 25); //rotate 25
+    degress.
+
+   ctx.fillStyle="#0000ff";
+   ctx.filllRect(10,10, 100, 100);
+
+</script>
+
+<!-- El método scale () -->
+
+    
+    <svg width = "1000" height="250"></svg>
+    <script>
+       var canvas = document.getElementById ("canvas1"); 
+    var ctx = canvas.getContext ("2d");
+             ctx.front="bold 22px Tahoma";
+             ctx.textAlign="Cristian Toro";
+             ctx.fillText("Cristian Toro", 10, 30);
+             ctx.translate(100, 150);
+             ctx.fillText("after translate", 0, 0);
+             ctx.rotate(1);
+             ctx.fillText("after rotate", 0, 0);
+             ctx.scale(100,500, 400);
+             ctx.fillText("Aftes sacale", 0,20);
+          </script>
+
+      <!-- Formulario en html5 () -->
+
+      <center><form>
+         <label> Su nombre:</label>
+         <input id = "user" name="username" type="text"/>
+      </form>
+</center>
+
+<center><form>
+         <label for="email">Correo Eletronico:</label>
+         <input name="Email" type="text" required/>
+         <input type="submit" value="Enviar"
+         placeholder="Email@seample.com" />
+      </form></center>
+
+      <!-- Crear un cuadro de busqueda en HTML5 () -->
+      busqueda<input id="busqueda" name="Buscar Item" type="search" />
+
+      <!-- Opciones De Búsqueda -->
+
+      busqueda<input id="Car" type="text" list="colors" />
+      <datalist id="colors">
+         <option value="Red">
+            <option value="Green">
+               <option value="Yellow">
+            </option>
+      </datalist>
+
+       <!-- Crear mas campos -->
+
+       <h3>Formulario</h3>
+      <input id="email" name="email" type="email"
+      placeholder="example.com"/>
+      <br />
+      <input id="url" name="url" type="url"
+      placeholder="ejemplo.com"/>
+      <br />
+      <input id="tel" name="tel" type="tel"
+      placeholder="555.555.1511"/>
+
+      
+
+<!-- Audios) -->
+
    <!DOCTYPE HTML>
    <html>
       <head>
@@ -507,6 +642,7 @@ width="120" height="100" viewBox="0 0 120 100">
 
          </header>
          <meta charset = "UTF-8">
+
 
          <!-- <article>, <aside>, <audio>, <canvas>, <datalist>, <details>, <embed>, <footer>, <header>, <nav>, <output>, <progress >, <sección>, <video>  -->
          <!-- Elemento Footer -->
