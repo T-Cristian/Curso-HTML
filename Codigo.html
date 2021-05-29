@@ -356,19 +356,97 @@
       </head>
       <body>
          <header>
-            <h1> Encabezado mas importante </h1>
+            <h1> HTML5 </h1>
             <h3> Título menos importante </h3>
 
          </header>
          <meta charset = "UTF-8">
 
          <!-- <article>, <aside>, <audio>, <canvas>, <datalist>, <details>, <embed>, <footer>, <header>, <nav>, <output>, <progress >, <sección>, <video>  -->
-
+         <!-- Elemento Footer -->
             <footer> </footer>
 
          <meta charset="UTF-8">
 
-         <!-- Elemento Footer -->
+         <!-- Elemento <nav> -->
+
+         <nav>
+            <ul>
+               <li><a href="#"> Inicio </a></li>
+               <li><a href="#"> Servicios </a></li>
+               <li><a href="#"> Acerca De Nosotros </a></li>
+            </ul>
+         </nav>
+
+         <!-- Elemento <article> -->
+            <h1> Articulo Sobre Servidores Rack</h1>
+            <p> Los servidores rack son muy populares por su gran capacidad y tambien por el manejo de espacios</p>
+
+         <!-- Elemento <section> -->
+
+            <article>
+               <section><h1> Articulo 2 </h1>
+                  <p> Contenido</p>
+               </section>
+            </article>
+
+         <!-- Elemento <aside> -->
+
+            <article>
+               <h1> Regalos para todos </h1>
+                  <p> Este sitio web es el mejor para elegir regalos</p>
+                  <aside>
+                     <p> Los regalos le serán entregados dentro de las 24 horas</p>
+                  </aside>
+            </article>
+
+            <!-- Audio Web -->
+
+            <audio src="audio.mp3" Controles>
+               Elemento de audio no compatible con su navgador</audio>
+
+            <audio controls> 
+               <source src="audio.mp3" type="audio / mpeg">
+               <source src="audio.ogg" type="audio / ogg">
+            </audio>
+
+            <audio controls> 
+               <source src="audio.mp3" type="audio / mpeg">
+               <source src="audio.ogg" type="audio / ogg">
+            </audio>
+
+   <!-- Atributos De Audio -->
+   <!-- Autamotco -->
+
+   <audio controls autoplay>
+
+      <!-- Bucle -->
+
+      <audio controls autoplay loop>
+
+          <!-- Videos En HTML -->
+
+          <video controls>
+             <source src="video.mp4" type="Vidfeo/mp4">
+             <source src="Video.ogg" type="video/ogg">
+          </video>
+
+          <!-- Atributos De Video -->
+
+          <video controls>
+            <source src="video.mp4" type="Vidfeo/mp4">
+            <source src="Video.ogg" type="video/ogg">
+            No es compatible con tu navegador
+         </video>
+
+          <!-- Barra de progreso -->
+
+         <cente> Estado: <progress min="0" max="100" value="35"></progress></cente>  
+         
+         <cente><label for="file">File progress:</label>
+
+            <progress id="file" max="100" value="70"> 70% </progress>
+            </cente>
 
       </body>
    </html>
