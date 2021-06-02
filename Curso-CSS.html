@@ -84,14 +84,184 @@
 <!--Selectores De Descendientes-->
 
     <div id="Descendientes">
-        <p class="Primero">This a <em>parrafo</em></p>
+        <p class="first">Celulares <em>Gaming</em></p>
         <p> Este es un segundor Parrafo </p>
     </div>
-    <p class="Primero">Esto no está en la sección de introducción</p>
+    <p class="first">Esto no está en la sección de introducción</p>
     <p>El segundo párrafo no está en la sección de introducción </p>
     <style>
-        #Descendientes{
-            color: violet;
-            background-color: tomato;
+        #Descendientes .first em{
+            color: rgb(211, 202, 211);
+            background-color: rgb(65, 60, 59);
         }
     </style>
+
+<!--Comentarios -->
+
+    <style>
+        #COMENTARIO {
+            color: teal;
+            /* El tamaño de 150 mas o menos */
+            font-size: 150%;
+    
+        }
+    </style>
+
+<!--Apariencia Final-->
+
+<html>
+   <head>
+      <style>
+        #body{
+         color:yellow;
+         font-family: Arial;
+         background-color: turquoise;
+      }
+     </style>
+   </head>
+   <body>   
+    <div id="Body">    
+      <p>
+      Hola
+      </p>
+    </div> 
+   </body>
+</html>
+
+<!--Las familias de las fuentes-->
+ <html>
+     <body>
+<p class="serif">
+    Este es un párrafo que se muestra en fuente serif.
+ </p>
+ <p class="sansserif">
+    Este es un párrafo que se muestra en fuente sans-serif.
+ </p> 
+ <p class="monospace">
+    Este es un párrafo que se muestra en fuente monoespaciada.
+ </p> 
+ <p class="cursive">
+    Este es un párrafo que se muestra en letra cursiva.
+ </p> 
+ <p class="fantasy">
+    Este es un párrafo que se muestra en fuente de fantasía.
+ </p> 
+    <style> 
+    p.serif{
+        color: yellow;
+        font-family: "Times New Roman", serif;
+    }
+    p.sansserif{
+        color: yellow;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    p.monospace{
+        color: rgb(109, 109, 8);
+        font-family: "Courier New ", 'Courier New', Courier;
+    }
+    p.cursive{
+        color: yellow;
+        font-family: Florence, cursive;
+    }
+    p.fantasy{
+        color: yellow;
+        font-family: Blippo, fantasy;
+    }
+    </style>
+    </body>
+ </html>
+
+<!--La propiedad de la familia de fuentes-->
+<html>
+    <style>
+ body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+ }
+</style>
+ </html>
+
+ <!--Tamaño de letras-->
+ <html>
+     <body>
+        <p class="small">
+            Texto del párrafo configurado para ser pequeña
+         </p>
+         <p class="medium">
+            Texto del párrafo configurado para ser mediano
+         </p>
+         <p class="large">
+            Texto del párrafo configurado para ser largo
+         </p>
+         <p class="xlarge">
+            Texto del párrafo configurado para ser largo
+         </p>
+         <style>
+        
+        p.small{
+            color: black;
+            font-size: small;
+        }
+        p.medium{
+            color: black;
+            font-size: medium;
+        }
+        p.large{
+            color: black;
+            font-size: large;
+        }
+        p.xlarge{
+            color: black;
+            font-size: x-large;
+        }
+         </style>
+     </body>
+ </html>
+
+ <!--Propiedades del tamaño de la fuente-->
+ <html>
+     <body>
+         <style>
+             #hola{
+                 font-size: 20px;
+             }
+             #hola{
+                 font-size: 1.25em;
+             }
+         </style>
+     </body>
+ </html>
+
+  <!--Propiedad estilo de fuente-->
+  <html>
+     <body>
+        <p class="italic">Este es un parrafo.</p>
+         <style>
+             p.italic{
+                 color:black;
+                 font-size: italic;
+             }
+         </style>
+     </body>
+  </html>
+
+  <!--Otras Propiedades-->
+
+<html>
+    <body>
+<p class="normal">This paragraph is normal.</p>
+<p class="italic">This paragraph is italic.</p>
+<p class="oblique">This paragraph is oblique.</p>
+        <style>
+        p.normal{
+            font-size: normal;
+        }
+        p.italic{
+            font-size: italic;
+        }
+        p.oblique{
+            font-size: oblique;
+        }
+        </style>
+    </body>
+</html>
+
