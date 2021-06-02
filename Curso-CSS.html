@@ -1,8 +1,7 @@
 <html>
     <body>
         <!--CSS En linea-->
-    
-    <p style="color: white; background-color: gray">
+    <p style="color: rgb(199, 194, 194); background-color: gray">
     Soy Cristian Camilo Toro Gómez Aprendiz Del Sena
     </p>
 
@@ -12,15 +11,17 @@
 <html>
     <head>
         <style>
-            p{
+            #integrado{
                 color: white;
                 background-color:gray;
             }
         </style>
     </head>
     <body>
+        <div id="integrado">
         <p>Emprendedor dispuesto a ofrecer sus servicios a la emrpesa de homecenter</p>
         <p>Implementando los mejores Servicios</p>
+    </div>
     </body>
 </html>
 <!--CSS externo-->
@@ -29,16 +30,68 @@
        <link rel="stylesheet" href="https://www.homecenter.com.co/homecenter-co/">
    </head>
    <body>
-    <style>
-        p{
-            color:white;
-            background-color:orange;
-        }
-    </style>
+    <div id="extremo">
        <p>Primer Servicio</p>
        <p>Segundo Servicio</p>
+       </div>
        <p>Tercer Servicio</p>
+       <style>
+        #extremo{
+            color:rgb(209, 137, 137);
+            background-color:rgb(250, 249, 246);
+        }
+    </style>
    </body>
 </html>
 
-<!--CSS Syntax-->
+<!--Sintaxis CSS-->
+<htm>
+    <h1>Soluciones</h1>
+<body>
+<style>
+    h1{color: red;}
+</style>
+</body>
+</htm>
+<!--Selectores De Tipo O Tamaño del parrafo-->
+<html>
+    <body>
+        <center><p>Actividades</p></center>
+        <style>
+            p{
+                color: royalblue;
+                font-size:130%;
+            }
+        </style>
+    </body>
+</html>
+<!--Selectores De ID Y Clase-->
+    <htm>
+<body>
+<div id="intro">
+    <p> Este es un sitio para realizar compras</p>
+ </div>
+ <p> Productos Premimium</p>
+
+<style>
+    #intro{
+        color: turquoise;
+        background-color: violet;
+    }
+</style>
+</body>
+</htm>
+<!--Selectores De Descendientes-->
+
+    <div id="Descendientes">
+        <p class="Primero">This a <em>parrafo</em></p>
+        <p> Este es un segundor Parrafo </p>
+    </div>
+    <p class="Primero">Esto no está en la sección de introducción</p>
+    <p>El segundo párrafo no está en la sección de introducción </p>
+    <style>
+        #Descendientes{
+            color: violet;
+            background-color: tomato;
+        }
+    </style>
