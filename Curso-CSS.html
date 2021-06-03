@@ -1112,3 +1112,55 @@ p.hidden {border-style: hidden;}
     </body>
 </html>
 
+<!--Configuración del estilo del cursor del mouse-->
+
+<span style="cursor:help;">
+    ¿Tu necesitas ayuda?
+</span>
+
+<!--bloqueo de pantalla-->
+<span>First paragraph.</span>
+<span>Second paragraph.</span>
+<span>Third paragraph.</span>
+<span>Fourth paragraph.</span>
+<span>Fifth paragraph.</span>
+<style>
+    span {
+        display: block;
+    }
+</style>
+
+<!--pantalla: en línea-->
+<html>
+    <body>
+        <p>
+          Parrafo en pantalla Linea
+        </p>
+        <style>
+            p{
+                display: inline;
+            }
+        </style>
+    </body>
+</html>
+
+<!--pantalla: ninguna-->
+
+<html>
+    <body>
+        <center><h1> Este es un encabezado</h1></center>
+<div class="hidden">
+   
+Este texto no se mostrará en el navegador.
+</div>
+<p>
+El espacio sobre este párrafo está vacío porque
+la visibilidad del elemento div se establece en oculta.
+</p>
+        <style>
+            div.hidden {
+                visibility: hidden;
+            }
+        </style>
+    </body>
+</html>
