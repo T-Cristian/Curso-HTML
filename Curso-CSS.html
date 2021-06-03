@@ -265,3 +265,850 @@
     </body>
 </html>
 
+<!--La propiedad font-weight-->
+<html>
+    <body>
+    <p class="light">Esta es una fuente con un peso "más ligero".</p>
+    <p class="bold">Esta es una fuente con un peso "negrita".</p>
+    <p class="bolder">Esta es una fuente con un peso "más audaz".</p>
+        <style>
+    p.light{
+        color: black;
+        font-weight: lighter;
+    }
+    p.bold {
+        color: black;
+        font-weight: bold;
+    }
+    p.bolder{
+        color: black;
+        font-weight: bolder;
+    }
+        </style>
+    </body>
+</html>
+<!--La propiedad font-weight-->
+<html>
+    <body>
+     <p class="light">Esta es una fuente con un peso "más ligero".</p>
+     <p class="thick">Esta es una fuente con un peso "negrita".</p>
+     <p class="thicker">Esta es una fuente con un peso de "700".</p>
+        <style>
+            p.light{
+                font-weight: lighter;
+            }
+            p.thick{
+                font-weight: bold;
+            }
+            p.thciker{
+                font-weight: 700;
+            }
+        </style>
+    </body>
+</html>
+<!--La propiedad de la variante de fuente-->
+<html>
+    <body>
+    <p class="normal">Fuente de párrafo aviant establecida en normal</p>
+        <style>
+            p.normal{
+                color: rgb(219, 71, 71);
+                font-variant: normal;
+            }
+            p.small {
+                color: rgb(230, 65, 65);
+                font-variant: small-caps;
+            }
+        </style>
+    <p class="normal">Variante de fuente de párrafo establecida en normal.</p>
+    <p class="small">Variante de fuente de párrafo establecida en minúsculas.</p>
+    </body>
+</html>
+<!--La propiedad de colo a la fuente-->
+<html>
+    <body>
+        <p class="example">El texto dentro del párrafo es verde.</p>
+        El texto fuera del párrafo es negro (por defecto).
+        <style>
+            p.example{
+                color: forestgreen
+            }
+        </style>
+</html>
+
+<!--La propiedad de colo a la fuente-->
+<html>
+    <body>
+        <h1>Estes es un encabezado</h1>
+    <p class="example2">Este es un parrafo</p>
+        <style>
+            h1 {
+                color: #0000FF;
+            }
+            P.example2 {
+                color: rgb(65, 60, 59);
+            }
+        </style>
+    </body>
+</html>
+<!--La propiedad text-align-->
+<html>
+    <body>
+    <p class="left">Este párrafo está alineado con <strong>Izquierda.</strong></p>
+    <p class="right">Este párrafo está alineado con <strong>Derecha.</strong></p>
+    <p class="center">Este párrafo está alineado con<strong>Centro.</strong></p>
+        <style>
+            p.left {
+                color: saddlebrown;
+                text-align: left;
+            }
+            p.right{
+                color: slateblue;
+                text-align: right;
+            }
+            p.center {
+                color: black;
+                text-align: center;
+            }
+        </style>
+    </body>
+</html>
+<!--La propiedad de alineación vertical-->
+<html>
+    <body>
+        <table border="1" cellpadding="2" cellspacing="0" style="height: 150px;">
+            <tr>
+               <td class="top">Arriba</td>
+               <td class="middle">Medio</td>
+               <td class="bottom">Bottom</td>
+            </tr>
+          </table>
+        <style>
+            p.top {
+                color: saddlebrown;
+                vertical-align: top;
+            }
+            p.middle {
+                color: slateblue;
+                vertical-align: middle;
+            }
+            p.bottom {
+                color: black;
+                vertical-align: bottom;
+            } 
+        </style>
+    </body>
+</html>
+<!--La propiedad de alineación vertical-->
+<html>
+<body>
+    <p>Esto es un <span class="baseline">texto en línea</span> ejemplo.</p>
+<p>Esto es un <span class="sub">texto de sublínea</span> ejemplo.</p>
+<p> Esto es un <span class="super">texto de superlínea</span> ejemplo.</p>
+<p> Esto es un <span class="pixel">pixel</span> ejemplo.</p>
+    <style>
+        span.baseline {
+            vertical-align: baseline;
+        }
+        span.sub {
+            vertical-align: sub;
+        }
+        span.super {
+            vertical-align: super;
+        }
+        span.pixel {
+            vertical-align: -10px;
+        }
+    </style>
+</body>
+</html>
+<!--La propiedad de alineación vertical-->
+    <html>
+        <body>
+            <div class="maineo">
+                <div class="Parrafo">
+                    Este es una alineación media.
+                </div>
+            <style>
+                .maineo{
+                    height: 150px; width: 400px;
+                    background-color: lightskyblue;
+                    display: inline-table;
+                }
+                .parrafo {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            </style>
+            </div>
+        </body>
+    </html>
+<!--Decoración de texto-->
+<html>
+    <body>
+        <p class="none">Este es el estilo predeterminado del texto (ninguno).</p>
+<p class="inherit">Este texto hereda la decoración de la madre.</p>
+<p class="overline">Este es un texto subrayado.</p>
+<p class="underline">Este es texto subrayado.</p>
+<p class="line-through">Este es un texto con líneas.</p>
+        <style>
+            p.none {
+                color: black;
+                text-decoration: none;
+            }
+            p.inherit {
+                color: black;
+                text-decoration: inherit;
+            }
+            p.overline {
+                color: black;
+                text-decoration: underline;
+            }
+            p.line-through {
+                color: black;
+                text-decoration: line-through;
+            }
+        </style>
+    </body>
+</html>
+<!--Sangria en el texto-->
+<html>
+    <body>
+        <p class="sangre"> Este es un ejemplo 
+            <strong> de la sangria </strong> de un texto. 
+            La primera línea de nuestro texto está sangrada a la derecha en 60px.
+            Además de los píxeles, también puede utilizar otras unidades de medida,
+            como pt, cm, em, etc. </p>
+        <style>
+            p.sangre{
+                color: black;
+                text-indent: 60px;
+            }
+        </style>
+    </body>
+</html>
+<!--La propiedad Sombra de texto-->
+<html>
+    <body>
+        <div id="sombras"><h1>Sombra De Texto</h1></div>
+        <style>
+            #sombras {
+                color: rgb(165, 42, 114);
+                color: #000000;
+                font-size: 30pt;
+                text-shadow: 5px 2px 4px rgb(139, 63, 0);
+            }
+        </style>
+        </div>
+    </body>
+</html>
+
+<!--La propiedad Sombra de texto con desenfoque-->
+
+<html>
+    <body>
+        <div id="sombras1"><h1>Sombra De Texto</h1></div>
+        <style>
+            #sombras1 {
+               font-size:  20pt;
+               text-shadow: rgba(0, 0, 255,1) -1px-2px 0.5em;
+            }
+        </style>
+    </body>
+</html>
+
+<!--Transformar Texto-->
+<html>
+    <body>
+        <p class="capitalize">
+            El valor capitalizar transforma el primero
+            carácter en cada palabra a mayúsculas;
+            todos los demás personajes no se ven afectados.
+        </p>
+        <style>
+            p.capitalize{
+                color: black;
+                text-transform: capitalize;
+            }
+        </style>
+    </body>
+</html>
+<!--valores de transformación de texto -->
+<html>
+    <body>
+        <p class="uppercase">Este valor transforma todos los caracteres a mayúsculas.</p>
+        <p class="lowercase">Este valor transforma todos los caracteres a minúsculas.</p>
+        <style>
+            p.uppercase {
+                color: black;
+                text-transform: uppercase;
+            }
+            p.lowercase{
+                color: black;
+                text-transform: lowercase;
+            }
+        </style>
+    </body>
+</html>
+<!--La propiedad de espaciado de letras-->
+<html>
+    <body>
+<p class="normal">A este párrafo no se le aplica ningún espacio adicional entre letras.</p>
+<p class="positive ">Este párrafo tiene 4 píxeles de espacio entre letras.</p>
+        <style>
+            p.normal {
+                color: black;
+                letter-spacing: normal;
+            }
+            p.positive {
+                color: black;
+                letter-spacing: 4px;
+            }
+        </style>
+    </body>
+</html>
+<!--Usar valores negativos-->
+<html>
+    <body>
+<p class="positive1">Este párrafo tiene 4 píxeles de espacio entre letras.</p>
+<p class="negative">Este párrafo está espaciado entre letras a -1.5px</p>
+        <style>
+            p.positive1{
+                color: black;
+                letter-spacing: 4px;
+            }
+            p.negative{
+                color: orange;
+                letter-spacing: -1.5px;
+            }
+        </style>
+    </body>
+</html>
+<!--La propiedad de espaciado de palabras-->
+<html>
+    <body>
+    <p class="normal">A este párrafo no se le aplica ningún espacio adicional entre palabras.</p>
+    <p class="px">Este párrafo tiene un espacio entre palabras de 30 píxeles.</p>
+    </body>
+    <style>
+        p.normal {
+            color: black;
+            word-spacing: normal;
+        }
+        p.px {
+            color: black;
+            word-spacing: 30px;
+        }
+    </style>
+</html>
+<!--Unidades de medida-->
+<html>
+    <body>
+        <p class="positive3">Medidas Este párrafo está espaciado entre palabras a 20 píxeles. Unidades de medida</p>
+        <p class="negative3">Este párrafo tiene un espacio entre palabras de -5px.</p>
+        <style>
+            p.positive3 {
+                word-spacing: 20px;
+            }
+            p.negative3 {
+                word-spacing: -5px;
+            }
+        </style>
+    </body>
+</html>
+<!--La propiedad del espacio en blanco-->
+<html>
+    <body>
+        <p class="espacio" This paragraph has         multiple spaces      anda line break, but it will be ignored, as we used the nowrap value.>
+    </p>
+        <style>
+            p.espacio {
+                white-space: nowrap;
+            }
+        </style>
+    </body>
+</html>
+<!--Los valores del espacio en blanco-->
+<html>
+    <body>
+<p class="pre"> 
+    In the markup we have multiple            spaces 
+    and a line break. 
+    </p>
+    <p class="preline"> 
+    In the markup we have multiple            spaces 
+    and a line break, but in the result multiple spaces are ignored. 
+    </p>
+    <p class="prewrap"> 
+    In the markup we have              multiple 
+    spaces and a line break.
+    </p>
+    <style>
+        p.pre{
+            color: black;
+            white-space: pre;
+        }
+        p.preline {
+            color: black;
+            white-space: pre-line;
+        }
+        p.prewrap {
+            color: black;
+            white-space: pre-wrap;
+        }
+    </style>
+    </body>
+</html>
+
+<!--Borde De Texto-->
+    <p class="border"> Este es un ejemplo de un borde sólido.</p>
+<style>
+    p.border {
+        padding: 10px;
+        border: 5px solid green;
+    }
+</style>
+
+<!--Ancho del borde-->
+<html>
+    <body>
+        <p class="first">
+            El ancho del borde de este párrafo se establece en 2px.
+        </p>
+        <p class="second">
+            El ancho del borde de este párrafo se establece en 5px.
+        </p>
+        <style>
+        p.first {
+            padding: 10px;
+            border-style: solid;
+            border-width: 2px;
+        }
+        p.second {
+            padding: 10px;
+            border-style: solid;
+            border-width: 5px;
+        }
+        </style> 
+    </body>
+</html>
+
+<!--Ancho del borde Con Colores-->
+<html>
+    <body>
+        <style></style>
+<p class="first2">
+    El color del borde se ha creado utilizando.<strong>Nombre del color.</strong>
+ </p>
+ <p class="second2">
+    El color del borde se ha creado utilizando.<strong>Valores hexadecimales.</strong> 
+ </p>
+ <p class="third2">
+    El color del borde se ha creado utilizando.<strong>Valores RGB</strong> 
+ </p>
+   
+        <style>
+            p.first2 {
+                Padding: 10px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: blue
+            }
+            P.second2 {
+                padding: 10px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #FF6600;
+            }
+            p.third2 {
+                padding: 10px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: rgb(0, 153, 0);
+            }
+        </style>
+    </body>
+ </html> 
+
+<!--La propiedad de estilo de borde-->
+<html>
+    <body>
+<p class="none">Este párrafo no tiene borde.</p>
+<p class="dotted">Este es un borde punteado.</p>
+<p class="dashed">This is a dashed border.</p>
+<p class="double">Este es un borde punteado.</p>
+<p class="groove">Este es un borde ranurado.</p>
+<p class="ridge">Este es un borde estriado.</p>
+<p class="inset">Este es un borde insertado.</p>
+<p class="outset">Esta es una frontera inicial.</p>
+<p class="hidden">Este es un borde oculto.</p>
+
+<style>
+
+p.none {border-style: none;}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: double;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.hidden {border-style: hidden;}
+
+</style>
+    </body>
+</html>
+
+<!--Ancho y alto de CSS-->
+<html>
+    <body>
+<div class="ancho">El ancho y alto total de este elemento es 100px.</div>
+    </body>
+    <style>
+        div.ancho{
+            border: 5px solid green;
+            width: 90px;
+            height: 90px;
+        }
+    </style>
+</html>
+
+<!--Ancho y alto de CSS-->
+<html>
+    <body>
+        <div class="ancho1">El ancho total de este elemento es <strong>100%</strong>y la altura total es<strong>100px</strong> .</div>
+        <style>
+            div.ancho1{
+                border: 5px solid greenyellow;
+                width: 100%;
+                height: 90px;
+            }
+        </style>
+    </body>
+</html>
+
+<!--Los tamaños mínimo y máximo-->
+<html>
+    <body>
+        <p class="first3">The <strong> altura mínima </strong> de este párrafo se establece en 100px.</p>
+<p class="second3">The<strong> ancho máximo </strong> de este párrafo se establece en 100px. </p>
+        <style>
+            p.first3{
+                border: 5px solid greenyellow;
+                min-height: 100px;
+            }
+            p.second3{
+                border: 5px solid green;
+                max-width: 100px;
+            }
+        </style>
+    </body>
+</html>
+
+<!--La propiedad de color de fondo-->
+
+<html>
+    <body>
+        <p class="fondo">El color de fondo de esta página se establece en LightSkyBlue.</p>
+        <style>
+            p.fondo{
+                background-color: #87cefa;
+            }
+        </style>
+    </body>
+</html>
+
+<!--La propiedad de color de encabezados-->
+
+<html>
+    <body>
+        <h1 class="pi">Homecenter </h1>
+        <p class="po">Este es un parrafo</p>
+        <style>
+            p.pi {
+                background-color: rgb(135,206,235);
+            }
+            p.po{
+                background-color: lightgreen;
+            }
+        </style>
+    </body>
+</html>
+
+<!--Imagenes por css-->
+    <html>
+        <body>
+            <style>
+                body{
+                    background-image: ur("https://logodownload.org/wp-content/uploads/2019/09/sodimac-logo-6.png");
+                    background-color: #e9e9e9;
+                }
+            </style>
+        </body>
+    </html>
+
+<!--La propiedad de la imagen de fondo-->
+<html>
+    <body>
+        <p Class="imagen">Este párrafo tiene una imagen de fondo.</p>
+        <style>
+            p.imagen {
+                padding: 30px;
+                background-image: url("green_photo.jpg");
+                color: white;}
+        </style>
+    </body>
+</html>
+<!--La propiedad background-repea-->
+<html>
+    <body>
+        <style>
+            body{
+            background-image: url("css_logo.ong");
+            background-repeat: repeat-y;
+        }
+        </style>
+    </body>
+</html>
+
+<!--Establecer el valor para heredar-->
+
+<html>
+    <body>
+        <style>
+        body {
+            background-image: url("css_kifi.png");
+            background-repeat: repeat-x;
+        }
+        p.hojal {
+            background-repeat: inherit;
+            margin-top: 100px;
+            padding: 40px
+        }
+        </style>
+    </body>
+</html>
+
+<!--Los valores de archivo adjunto de fondo-->
+<html>
+    <body>
+        <style>
+            body {
+                background-image: url("css_log.png");
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+            }
+        </style>
+    </body>
+</html>
+<!--La propiedad de tipo de estilo de lista-->
+<html>
+    <body>
+        <ol class="lower-alpha">
+            <li>Red</li>
+            <li>Green</li>
+            <li>Blue</li>
+         </ol>
+         <ul class="circle">
+            <li>Red</li>
+            <li>Green</li>
+            <li>Blue</li>
+         </ul>
+         <ul class="square">
+            <li>Red</li>
+            <li>Green</li>
+            <li>Blue</li>
+         </ul>
+         <style>
+             ol.lower-alpha {
+                 list-style-type: lower-alpha;
+             }
+             ul.circle {
+                 list-style-type: circle;
+             }
+             ul.square {
+                 list-style-type: square;
+             }
+         </style>
+    </body>
+</html>
+
+<!--La imagen y la posición de la lista-->
+<html>
+    <body>
+        <p>La siguiente lista tiene lista-estilo-posición:<strong>adentro</strong>.</p>
+<ul>
+   <li>Red</li>
+   <li>Green</li>
+   <li>Blue</li>
+</ul>
+        <style>
+            ul {
+                list-style-image: url("logo.jpg");
+                list-style-position: inside;
+            }
+        </style>
+    </body>
+</html>
+<!--La propiedad de estilo de lista-->
+<html>
+    <body>
+        <style>
+  ul {
+            list-style: square outside none;
+        }
+    ul {
+        list-style-type: square;
+        list-style-position: outside;
+        list-style-image: none;
+        
+    }
+        </style>
+    </body>
+</html>
+<!--Las propiedades de la tabla-->
+<html>
+    <body>
+        <table border="1">
+            <tr>
+              <td>Red</td>
+              <td>Green</td>
+            </tr>
+            <tr>
+               <td>Blue</td>
+               <td>Yellow</td>
+            </tr>
+         </table>
+         <style>
+             table {
+                 border-collapse: separate;
+                 border-spacing: 20px 40px;
+             }
+         </style> 
+    </body>
+</html>
+<!--La propiedad del lado del título-->
+<html>
+    <body>
+        <table border="1">
+            <caption>Cursos en sololearn</caption>
+            <tr>
+              <th>Course name</th>
+              <th>Lessons</th>
+              <th>Quizzes</th>
+            </tr>
+            <tr>
+              <td>C++</td>
+              <td>81</td>
+              <td>363</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>48</td>
+              <td>144</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>38</td>
+              <td>119</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>70</td>
+              <td>174</td>
+            </tr>
+            </table>
+            <style>
+                caption {
+                    caption-side: top;
+                }
+            </style>
+    </body>
+</html>
+<!--La propiedad de las celdas vacías-->
+<html>
+    <body>
+        <table border="1">
+            <tr>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td></td>
+            </tr>
+          </table>
+          <style>
+            table {
+                border-collapse: separate;
+                empty-cells: hide;
+            }  
+          </style>
+    </body>
+</html>
+<!--La propiedad de diseño de tabla-->
+<html>
+    <body>
+        <p>El diseño de la tabla se establece en <strong>automatico</strong></p>
+<table class="auto">
+  <tr>
+    <td width=“10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+
+<p>El diseño de la tabla se establece en <strong>reparada</strong></p>
+<table class="fixed">
+  <tr>
+    <td width="10%">500.000.000.000.000</td>
+    <td width="90%">20.000</td>
+  </tr>
+</table>
+        <style>
+            table {
+                border-collapse: separate;
+                width: 100%;
+                border: 1px solid gray
+            }
+            td{
+                border: 1px solid gray;
+            }
+            table.auto {
+                table-layout: auto;
+            }
+            table.fixed {
+                table-layout: fixed;
+            }
+        </style>
+    </body>
+</html>
+
+<!--Establecer estilos para enlaces-->
+<html>
+    <body>
+        <p><a href="http://www.sololearn.com" target="_blank">
+            Este es el link de sololearn
+         </a></p>
+        <style>
+            a:hover {
+                color: red
+            }
+        </style>
+    </body>
+</html>
+
+<!--Decoration de texto al link-->
+
+<html>
+    <body>
+        <p><a href="http://www.sololearn.com" target="_blank">
+            Este enlace no tiene subrayado.
+         </a></p>
+        <style>
+            a:link {
+                text-decoration: none;
+            }
+        </style>
+    </body>
+</html>
+
