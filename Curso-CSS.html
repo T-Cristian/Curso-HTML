@@ -1164,3 +1164,405 @@ la visibilidad del elemento div se establece en oculta.
         </style>
     </body>
 </html>
+
+<!--Posición De Los Elementos-->
+
+<html>
+    <head>
+        <p>Paragraph with no position.</p>
+<p>Paragraph with no position.</p>
+<p>Paragraph with no position.</p>
+<p>Paragraph with no position.</p>
+<p>Paragraph with no position.</p>
+<p class="position_static">This paragraph has a static position.</p>
+        <style>
+          p.position_static {
+              position:static;
+              top: 30px;
+              right: 5px;
+              color: red;
+          }  
+        </style>
+    </head>
+</html>
+
+<!--Posicionamiento Relativa-->
+<html>
+    <head>
+        <p class="PisitionR">Posision relativa Que va cambiando</p> 
+        <p class="spam2">Spam2</p> 
+        <style>
+            p.PositionR{
+                width: 350px;
+                border: ipx black solid;
+                position:fixed
+            }
+            p.spam2 {
+                background: green;
+                color: white;
+                position: relative;
+                top: 150px;
+                left: 50px;
+            }
+
+        </style>
+    </head>
+</html>
+
+<!--Texto Flotante-->
+<html>
+    <body>
+        <p><img src="css_logo.png" />
+            Este párrafo tiene una imagen flotante a la <strong> derecha. </strong>
+            Es muy recomendable agregar un margen a las imágenes para que el texto
+            No te acerques demasiado a la imagen. Si desea que su texto se lea fácilmente,
+            siempre debe agregar algunos píxeles entre palabras y bordes, imágenes,
+            y otro contenido.
+            </p>
+            <style>
+                img {
+                    float: right;
+                }
+        </style>
+    </body>
+</html>
+
+<!--Limpiando el flotador-->
+
+<html>
+    <body> 
+Este párrafo está por encima del elemento div
+y no se ve afectado por la propiedad del derecho flotante.
+<br /><br />
+<div class="floating">
+   <img src="css_logo.png" />
+</div>
+Este párrafo viene después del elemento div
+y se ve afectado por la propiedad del derecho flotante.
+<br /><br />
+Este párrafo también viene después del elemento div
+y se ve afectado por la propiedad del derecho flotante.
+<br /> <br />
+        <style>
+            .floating{
+                float: right;
+            }
+        </style>
+    </body>
+</html>
+
+<!--La propiedad de desbordamiento-->
+<html>
+    <body>
+        <div class="overflow">
+            Este texto está dentro del elemento div, que tiene un azul
+color de fondo y flota a la izquierda. Establecemos un específico
+alto y ancho para el elemento div, y como puede ver,
+el contenido no cabe.
+            </div>
+        <style>
+            div.overflow{
+                width: 150px;
+                height: 150px;
+                background-color: lightblue;
+                float: left
+            }
+
+        </style>
+    </body>
+</html>
+<!--Los valores de propiedad de desbordamiento-->
+<html>
+    <body>
+        <div class="overflow1">
+            Este texto está dentro del elemento div, que tiene un azul
+color de fondo y flota a la izquierda. Establecemos un específico
+alto y ancho para el elemento div, y como puede ver,
+el contenido no cabe.
+            </div>
+        <style>
+            div.overflow1{
+                width: 150px;
+                height: 150px;
+                background-color: lightblue;
+                float: left;
+                overflow: scroll;
+            }
+
+        </style>
+    </body>
+</html>
+<!--La propiedad del índice z-->
+<html>
+    <body>
+        <p class="blue">Blue</p>
+        <p class="Red">Red</p>
+        <style>
+            p.blue{
+                background-color: #8EC4D0;
+                margin-bottom: 15px;
+                width: 120px;
+                height: 120px;
+                color: #fff;
+            }
+            p.red{
+                background-color: #ff4d4d;
+                position: relative;
+                width: 120px;
+                height: 120px;
+                color: #fff; 
+                margin-top: -50px;
+                margin-left: 50px;
+            }
+        </style>
+    </body>
+</html>
+
+<!--Prefijos de proveedores de CSS-->
+<html>
+    <h2>CSS3</h2>
+    <body>
+        <p class="Prefijos">Buenos dias</p>
+        <style>
+            p.Prefijos{
+                border-radius: 20px;
+                background-color: green;
+                color: white;
+            -webkit-border-radius: 24px;
+            -moz-border-radius: 8px;
+        }
+        </style>
+    </body>
+</html>
+
+<!--Circulo-->
+<html>
+    <h2>CSS3</h2>
+    <body>
+        <div class="circulo"></div>
+        <style>
+            p.Circulo{
+                width: 200px;
+                height: 200px;
+                border-radius: 100px;
+                background-color: green;
+                color: white;
+            }
+        </style>
+    </body>
+</html>
+
+<!--Caja Con sombra-->
+<html>
+    <body>
+        <div class="hola"></div>
+    </body>
+</html>
+<style>
+    div.hola{
+    width: 300px;
+    height: 100px;
+    background-color: #9acd32;
+    box-shadow: 10px 10px #888888;
+    }
+</style>
+
+<!--Caja Con sombra-->
+<html>
+    <body>
+        <div class="hola1"></div>
+    </body>
+</html>
+<style>
+    div.hola1{
+    width: 300px;
+    height: 100px;
+    background-color: #9acd32;
+    box-shadow: inset 10px 10px 5px #888888;
+    }
+</style>
+<!--Caja Con sombra Roja-->
+<html>
+    <body>
+        <div class="hola1"></div>
+    </body>
+</html>
+<style>
+    div.hola1{
+    width: 300px;
+    height: 100px;
+    background-color: #9acd32;
+    box-shadow: 0 0 10px 4px #ff6347,
+    0 0 10PX 30OX #ffdab9,
+    30PX 0 20PX 30px #b0e0e6;
+    }
+</style>
+
+<!--Efecto Trasnparente-->
+
+<html>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">DISCUSS</a></li>
+                <li><a href="#">TOP LEARNERS</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+         </nav>
+        <style>
+            body{
+                background:url("https://i0.wp.com/hipertextual.com/wp-content/uploads/2013/11/Wallpaper-Monta%C3%B1as.jpg?fit=1200%2C800&ssl=1") ;
+            }
+            nav{
+                padding: 50px 0;
+                min-width: 500px;
+            }
+            nav ul {background: linear-gradient(90deg,
+                    rgba(255,255,255,0) 0%,
+                    rgba(255,255,255,0.2) 25%,
+                    rgba(255,255,255,0.2) 75%,
+                    rgba(255,255,255,0.2) 100%);
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+                    inset 0 01px rgba(255, 255,255 0.6);}
+                nav ul li{
+                    display: inline-block;
+                }
+                nav ul li a {
+                    padding: 10px;
+                    color: #FFFF;
+                    Font-size: 18px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-decoration: none;
+                    display: block;
+                }
+        </style>
+
+    </body>
+</html>
+
+<!--La propiedad de ajuste de palabras-->
+<html>
+    <body>
+        <p class="p20">Hola Soy Cristian</p>
+        <style>
+            p.p20{
+                width: 210px;
+                height: 100px;
+                border: 1px solid #000;
+                word-wrap:normal;
+            }
+        </style>
+    </body>
+</html>
+
+<!--Crear degradados lineales-->
+
+<html>
+    <body>
+        <p class="p21">Hola Soy Camilo</p>
+        <style>
+            p.p21{
+                float: left;
+                width: 300px;
+                height: 100px;
+                margin: 4px;
+                color: #fff;
+                background:  -moz-linear-gradient(blue, yellow, green, pink, white);
+              
+            }
+        </style>
+    </body>
+</html>
+
+<!--Crear degradados lineales-->
+<HTMl>
+    <body>
+        <p class="p21">Hola Soy Toro</p>
+        <style>
+           p.p21 {
+               float: left;
+               width: 300px;
+               height: 100px;
+               margin: 4px;
+               color: #fff;
+               background: -moz-linear-gradient(bottom, blue, green, white);;
+           } 
+        </style>
+    </body>
+</HTMl>
+<!--Crear degradados lineales-->
+<HTMl>
+    <body>
+        <p class="p21">Hola Soy Gomez</p>
+        <style>
+           p.p21 {
+               float: left;
+               width: 300px;
+               height: 100px;
+               margin: 4px;
+               color: #fff;
+               background: -moz-radial-gradient(green, yellow, blue);
+
+           } 
+
+           p.p21 {
+               float: left;
+               width: 300px;
+               height: 100px;
+               margin: 4px;
+               color: #fff;
+               background: -moz-radial-gradient(circle, green, yellow, blue);
+
+           } 
+
+        </style>
+    </body>
+</HTMl>
+
+<!--Opacidad De Las Imagenes-->
+<style>
+    #img1 {
+        opacity: 1;
+    }
+    #img2 {
+        opacity: 0.5;
+    }
+    #img3 {
+        opacity: 0.25;
+    }
+</style>
+
+<!--La propiedad de transición-->
+
+<style>
+    div {
+        width: 50px;
+        height: 50px;
+        background: #32cd32;
+        transition: width 3s;
+    }
+    div:hover {
+        width: 250px;
+    }
+</style>
+<!--Animaciones-->
+<html>
+    <body>
+        <div class="hola3"></div>
+    </body>
+</html>
+<style>
+    div.hola3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: colorchange;
+    animation-duration: 2s;
+    }
+    @keyframes colorchange {
+        0% {background-color: red;}
+        50%{background-color: green;}
+        100%{background-color:blue;}
+    }
+</style>
