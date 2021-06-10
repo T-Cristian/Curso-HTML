@@ -391,9 +391,9 @@ switch (x) {
    </head>
    <body>
        <script>
-           for (statement 1, statement 2, statement 3) {
-                code block to be executed
-           }
+           // for (statement 1, statement 2, statement 3) {
+                // code block to be executed
+           
        </script>
    </body>
    </html>
@@ -470,21 +470,14 @@ switch (x) {
 </head>
 <body>
     <script>
-        whitle (condición) {
-            bloque de codigo
-        }
+        whitle (condición) 
+           // Escribir aqui el bloque de codigo
+        
     </script>
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
     <script>
         var i = 0;
@@ -492,5 +485,65 @@ switch (x) {
             document.write (i + "<br />");
         }
     </script>
+<!-- El bucle Do ... While -->
+<script>
+    var i=20;
+        do {
+           document.write(1 + "<br />");
+           i++;
+        } 
+        while (i<=25);
+</script>
 </body>
+</html>
+
+<!-- Rotura -->
+
+<html>
+    <body>
+        <script>
+            for (i = 0; i <= 10; i++){
+                if (i == 5){
+                    break
+                }
+                document.write(i + "<br />");
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Continuo -->
+<html>
+    <body>
+        <script>
+            for (i = 0; i <= 10; i++) {
+                if (i == 5){
+                    continue;
+                }
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Parametros de una función -->
+<html>
+    <body>
+        <script>
+            function sayHello (nombre) {
+                alerta ("Hola" + nombre);
+            }   sayHello ("David");
+        </script>
+    </body>
+</html>
+<html>
+    <body>
+        <script>
+            function sayHello(name) {
+                alert("Hi, " + name);
+            }
+            sayHello("David");
+            sayHello("Sarah");
+            sayHello("John");
+        </script>
+    </body>
 </html>
