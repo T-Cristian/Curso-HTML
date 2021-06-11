@@ -779,3 +779,324 @@ document.write(p.yearOfBirth())
         </script>
     </body>
 </html>
+
+<!-- JavaScript Arrays -->
+<html>
+    <body>
+        <script>
+            var course1 ="HTML";
+            var course2 ="CSS";
+            var course3 ="JS";
+            var courses = new Array("HTML","CSS","JS")
+        </script>
+    </body>
+</html>
+
+<!-- Acceder a una matriz -->
+
+<html>
+    <body>
+        <script>
+            var courses = new Array("HTML", "CSS", "JS"); 
+            var course = courses[0]; // HTML
+            courses[1] = "C++"; //Changes the second element 
+        </script>
+    </body>
+</html>
+
+<!-- Acceder a una matriz -->
+
+<HTml>
+    <body>
+        <script>
+            var courses = new Array("HTML", "CSS", "JS");
+            document.write(courses[10]);
+        </script>
+    </body>
+</HTml>
+
+<!-- Crear Matrices -->
+
+<html>
+    <body>
+        <script>
+            var courses = new Array(3);
+            course[0] = "HTML";
+            course[1] = "CSS";
+            course[2] = "JS";
+        </script>
+    </body>
+</html>
+
+<!-- Crear Matrices Parte 2 -->
+<html>
+    <body>
+        <script>
+            var courses = new Array();
+            courses[0] = "HTML";
+            courses[1] = "CSS";
+            courses[2] = "JS";
+            Courses[3] = "C++";
+
+            var course = ["HTML", "CSS", "JS"];
+
+        </script>
+    </body>
+</html>
+
+<!-- La Propiedad de Longitud -->
+
+<html>
+    <body>
+        <script>
+            var courses = ["HTML", "CSS", "JSS"];
+            document.write(courses.length);
+        </script>
+    </body>
+</html>
+
+<!-- Combinando matrices -->
+
+<html>
+    <body>
+        <script>
+            var c1 = ["HTML", "CSS"];
+            var c2 = ["JS", "C++"];
+            var courses = c1.concat(c2);
+        </script>
+    </body>
+</html>
+
+<!-- Matrices asociativas -->
+
+<html>
+    <body>
+        <script>
+            var person = []; //Matriz Vacía
+            person["nombre"] = "Juan";
+            person["Edad"] = 46;
+            document.write(person ["Edad"]);
+        </script>
+    </body>
+</html>
+
+<!-- Objeto Matemático -->
+
+<html>
+    <body>
+        <script>
+            document.write (Math.Pi);
+        </script>
+    </body>
+</html>
+
+<!-- Métodos de objetos matemáticos -->
+
+<html>
+    <body>
+        <script>
+            var number = Math.sqrt(4);
+            document.write(number);
+        </script>
+    </body>
+</html>
+
+<!-- Métodos de objetos matemáticos -->
+
+<html>
+    <body>
+        <script>
+            var n = prompt ("ingrese un número","");
+            var answer = Math.sqrt(n);
+            alert("The square root of"+ n + "is" + answer);
+                    </script>
+    </body>
+</html>
+
+<!-- setInterval -->
+
+<html>
+    <body>
+        <script>
+            function myAlert() {
+                alert("H1");
+            }
+            setInterval(MyAlert, 3000);
+        </script>
+    </body>
+</html>
+
+<!-- El objeto de fecha -->
+
+<html>
+    <body>
+        <script>
+            var d = new Date();
+            //d almacena la fecha y hora actuales
+            new Date(milliseconds)
+            new Date(dateString)
+            new Date(year, month, day, hours, minutes, seconds, milliseconds)
+        </script>
+    </body>
+</html>
+
+<!-- El objeto de fecha -->
+
+<html>
+    <body>
+        <script>
+            //Fri Jan 02 1970 00:00:00
+var d1 = new Date(86400000); 
+
+//Fri Jan 02 2015 10:42:00
+var d2 = new Date("Enero 2, 2015 10:42:00");
+
+//Sat Jun 11 1988 11:42:00
+var d3 = new Date(88,5,11,11,42,0,0);
+        </script>
+    </body>
+</html>
+
+<!-- Métodos de fecha -->
+<html>
+    <body>
+        <script>
+            var d = new Date();
+            var hours = d.getHours();
+            // horas es sórdido a la hora actual
+
+            function printTime() {
+                var d = new Date();
+                var hours = d.getHours();
+                var mins = d.getMinutes();
+                var secs = d.getSeconds();
+        document.body.innerHTML = hours+":" + mins+ ":" +secs;
+            }
+        setInterval(printTime, 1000);
+        </script>
+    </body>
+</html>
+
+<!-- El objeto del documento -->
+
+<html>
+    <body>
+        <script>
+            document.body.innerHTML = "Aqui escribimos texto";
+        </script>
+    </body>
+</html>
+
+<!-- Seleccionar elementos -->
+
+<html>
+    <body>
+        <script>
+    //encuentra el elemento por id
+    document.getElementById(id) 
+
+    //encuentra elementos por nombre de clase
+    document.getElementsByClassName(name) 
+
+    //busca elementos por nombre de etiqueta
+    document.getElementsByTagName(name) 
+    
+            var elem = document.getElementById("demo");
+            elem.innerHTML = "Hello World!";
+        </script>
+    </body>
+</html>
+
+<!-- Seleccionar elementos -->
+
+<html>
+    <body>
+        <script>
+            var arr =  document.getElementsByClassName("demo");
+            //Acceder al segundo elemento
+            
+            arr[1].innerHTML = "Hi";
+        </script>
+            <p>hi</p>
+            <p>hello</p>
+            <p>hi</p>
+        <script>
+        var arr = document.getElementsByTagName("p");
+        for (var x = 0; x < arr.length; x++) {
+        arr[x].innerHTML = "Hi there";
+}
+        </script>
+    </body>
+</html>
+
+<!-- Trabajando con DOM -->
+
+<html>
+    <body>
+        <div id="demo">
+            <p>some text</p>
+            <p>Some other</p>
+            </div>
+            <script>
+                var a = document.getElementById("demo");
+                var arr = a.childNodes;
+                for(var x=0; x < arr.length; x++);
+            </script>
+        </div>
+    </body>
+</html>
+
+<!-- Cambiar atributos -->
+
+<html>
+    <body>
+            <img id="myimg" src="orange.png" alt="" />
+    <script>
+    var el = document.getElementById("myimg");
+    el.src = "apple.png";
+    </script>
+    </body>
+</html>
+
+<a href="http://www.example.com">Some link</a>
+
+    <script>
+        var el = document.getElementsByClassName("a");
+        el[0].href = "htpp://www.sololearn.com";
+    </script>
+
+<!-- Cambio de estilo -->
+    <html>
+<div id="demo1" style="width:200px">Some text</div>
+<script>
+    var x = document.getElementById("demo1");
+    x.style.color = "6600ff";
+    xstyle.width = "100px";
+    
+</script>
+    </html>
+
+<!-- Creando elementos -->
+<html>
+    <body>
+        <script>
+            var node = document.createTextNode("Some new text");
+        </script>
+    </body>
+</html>
+
+<!-- Ejemplos -->
+
+<div id="demo3">Some content</div>
+
+<script>
+    //creating a new paragraph
+    var p =document.createElement("p");
+    var node = document.createTextNode("Some new text");
+    //adding the tex to the paragraph
+    p.appendChild(none);
+
+    var div = document.getElementById("demo3");
+    //adding the paragraph to the div
+    div.appendChild(p);
+</script>
