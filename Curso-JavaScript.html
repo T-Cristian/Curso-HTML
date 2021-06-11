@@ -306,14 +306,7 @@
 
    <!-- La Declaración Del Switch -->
 
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Document</title>
-   </head>
+  <html>
    <body>
        <script>
            var day = 2;
@@ -348,14 +341,7 @@ switch (x) {
 
    <!-- La palabra clave predeterminada -->
 
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Document</title>
-   </head>
+  <html>
    <body>
        <script>
            var color ="yellow";
@@ -381,14 +367,7 @@ switch (x) {
 
      <!-- Bucles -->
 
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Document</title>
-   </head>
+   <html>
    <body>
        <script>
            // for (statement 1, statement 2, statement 3) {
@@ -400,8 +379,7 @@ switch (x) {
 
    <!-- El bucle for -->
 
-   <!DOCTYPE html>
-   <html lang="en">
+   <html>
    <head>
        <meta charset="UTF-8">
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -419,8 +397,7 @@ switch (x) {
 
 <!-- El bucle for -->
 
-   <!DOCTYPE html>
-   <html lang="en">
+<html>
    <head>
        <meta charset="UTF-8">
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -439,14 +416,7 @@ switch (x) {
 
 <!-- El bucle flor -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
     <script>
         var i = 0;
@@ -460,14 +430,7 @@ switch (x) {
 
 <!-- El bucle while -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
     <script>
         whitle (condición) 
@@ -544,6 +507,275 @@ switch (x) {
             sayHello("David");
             sayHello("Sarah");
             sayHello("John");
+        </script>
+    </body>
+</html>
+
+<!-- Parametros de una función -->
+
+<html>
+    <body>
+        <script>
+            function sayHello(name, Edad) {
+                document.write(name + "is" + Edad + "years ol.");
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Parametros de una función -->
+
+<html>
+    <body>
+        <script>
+    function text(x, y) {
+        if(x>y){
+        document.write(x);
+        }
+        else {
+            document.write(y);
+        }
+    }
+
+    test(5,8);
+</script>
+       
+    </body>
+</html>
+
+<!-- Múltiples Parametros -->
+
+<html>
+    <body>
+        <script>
+            function sayHello(name, age) {
+                document.write( name + "is" + age + "years old")
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Retorno de función -->
+
+<html>
+    <body>
+        <script>
+            function myFunction(a, b) {
+                return a * b;
+            }
+
+            var x = myFunction(5, 6);
+        </script>
+    </body>
+</html>
+
+<!-- Retorno de función -->
+
+<html>
+    <body>
+        <script>
+            function addNumbers(a, b) {
+                var c = a*b;
+                return c;
+            }
+            document.write(addNumbers(40, 2));
+        </script>
+    </body>
+</html>
+
+<!-- Caja De Alertas -->
+
+<html>
+    <body>
+        <script>
+            alert("¿De verdad quieres salir de esta página?");
+        </script>
+    </body>
+</html>
+
+<!-- Caja Con Espaciado -->
+<html>
+    <body>
+        <script>
+            alert("Hello/nHow are you");
+        </script>
+    </body>
+</html>
+
+<!-- Caja Con Espaciado -->
+
+<html>
+    <body>
+        <script>
+            var user = prompt("por favor, escriba su nombre");
+            alert(user);
+        </script>
+    </body>
+</html>
+
+<!-- Confirmar Caja -->
+
+<html>
+    <body>
+        <script>
+            var result = confirm("Do you really want to leave this page?");
+            if (result == true) {
+                alert("Gracias Por Visitarnos")
+            }
+            else {
+                alert("Thanks For staying with us");
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Objeto JavaScript -->
+<html>
+    <body>
+        <script>
+            var person = {
+                nombre: "john", edad: 31,
+                favColor: "verde" , altura: 183
+            };
+        </script>
+    </body>
+</html>
+
+<!-- Objeto JavaScript -->
+
+<html>
+    <body>
+        <script>
+            var person = {
+                name: "John", age: 31,
+                favColor: "green", height: 183
+            };
+            var x = person.age;
+            var y = person["age"];
+            var course = {name: "JS", lessons: 41};
+            document.write(course.name.length);
+        </script>
+    </body>
+</html>
+
+<!-- Métodos de objetos -->
+<html>
+    <body>
+        <script>
+            ObjectName.methodName()
+        </script>
+    </body>
+</html>
+
+<!-- Métodos de objetos -->
+
+<html>
+    <body>
+        <script>
+            document.write("This is some text");
+        </script>
+    </body>
+</html>
+
+<!-- El constructor de objetos -->
+<html>
+    <body>
+        <script>
+            var person = {
+                name: "John" , age: 42, favColor: "Green"
+            };
+        </script>
+    </body>
+</html>
+
+<!-- El constructor de objetos -->
+
+<html>
+    <body>
+        <script>
+            function person(name, age, color) {
+  this.name = name;
+  this.age = age;
+  this.favColor = color;
+}
+        </script>
+    </body>
+</html>
+
+<!-- Creando Objetos -->
+
+<html>
+    <body>
+        <script>
+            var p1 = new person("Cristian", 42, "green");
+            var p2 = new person("Amy", 21, "red");
+
+            document.write(p1.age); // Ouyputs 42
+            document.write(p2.name); //Outputs "amy"
+        </script>
+    </body>
+</html>
+
+<!-- Inicialización de Objetos -->
+
+<html>
+    <body>
+        <script>
+            var John = {name: "John", age: 25};
+            var James = {name: "James", age: 21};
+        </script>
+    </body>
+</html>
+
+<!-- Usar inicializadores de objetos -->
+
+<html>
+    <body>
+        <script>
+            var john = {
+                name: "John",
+                age: 25
+            };
+            var James = {
+                name: "James",
+                age: 21
+            };
+            document.write(John.age);
+        </script>
+    </body>
+</html>
+
+<!-- Metodos -->
+<html>
+    <body>
+        <script>
+            function person(name, age) {
+  this.name= name;  
+  this.age = age;
+  this.yearOfBirth = bornYear;
+}
+function bornYear() {
+  return 2016 - this.age;
+}
+        </script>
+    </body>
+</html>
+
+<!-- Metodos -->
+
+<html>
+    <body>
+        <script>
+             function person(name, age) {
+  this.name= name;  
+  this.age = age;
+  this.yearOfBirth = bornYear;
+}
+function bornYear() {
+  return 2016 - this.age;
+}
+var p = new person("A", 22);
+document.write(p.yearOfBirth())
         </script>
     </body>
 </html>
