@@ -1100,3 +1100,131 @@ var d3 = new Date(88,5,11,11,42,0,0);
     //adding the paragraph to the div
     div.appendChild(p);
 </script>
+
+<!-- Eliminar elementos -->
+<html>
+    <body>
+        <script>
+            <div id="demo">
+                <p id="p1">This is a paragraph. </p>
+                <p id="p2">This is another paragraph.</p>
+                </div>
+        </script>
+    </body>
+</html>
+
+<!-- Reemplazo de elementos -->
+<html>
+    <body>
+        <div id="demo2">
+            <p id="p1">This a paragraph.</p>
+            <p id="p2">This another paragraph.</p>
+        </div>  
+        <script>
+          var p = document.createElement("p");
+          var node = document.createTextNode("This is new");
+          p.appendChi(node);
+
+          var parent = document.getElementById("demo2");
+          var child = document.getElementById("p1");
+          parent.replaceChild(p, child);
+        </script>
+    </body>
+</html>
+
+<!-- Animaciones -->
+<html>
+    <body>
+        <style>
+            #container {
+                width: 200px;
+                height: 200px;
+                background: green;
+                position: absolute;
+            }
+            #box {
+                width: 50px;
+                height: 50px;
+                background: red;
+                position: absolute;
+            }
+        </style>
+        <div id="container">
+            <div id="box"></div>
+        </div>
+    </body>
+</html>
+
+<!-- Animaciones -->
+<html>
+    <body>
+        <script>
+            var t = setInterval(move, 500);
+            // posición inicial
+var pos = 0; 
+//nuestro elemento de caja
+var box = document.getElementById("box");
+
+function move() {
+  pos += 1;
+  box.style.left = pos+"px"; //px = píxeles
+}
+        </script>
+    </body>
+</html>
+
+<!-- Animaciones2 -->
+
+<html>
+    <body>
+        <script>
+            var pos = 0;
+            // our box element
+            var box = document.getElementById("box");
+            var t = setInterval(move, 10);
+
+            function move() {
+                if(pos >= 150){
+                    clearInterval(t);
+                }
+                else {
+                    pos += 1;
+                    box.style.left = pos+"px";
+                }
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Animaciones3 -->
+<html>
+    <body>
+        <script>
+var t = setInterval(move, 10);
+        function move() {
+            if(pos >= 150) {
+                clearInterval(t);
+            }
+            else {
+                pos += 1;
+                box.style.left = pos+ "px";
+            }
+        }
+
+        var pos = 0;
+        //our box element
+        var box = document.getElementById("box");
+        var t = setInterval(move, 10);
+
+        function move() {
+            if(pos >= 150) {
+                clearInterval(t);
+            }
+            else {
+                pos += 1;
+                box.style.left = pos+ "px";
+            }
+        }
+</script>
+</body>
+</html>
