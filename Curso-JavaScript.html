@@ -1228,3 +1228,688 @@ var t = setInterval(move, 10);
 </script>
 </body>
 </html>
+
+<!-- Manejo de eventos -->
+
+<html>
+    <body>
+        <button onclick="show()">Clickeame</button>
+        <script>
+            function show() {
+                alert("Hi there");
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Eventos -->
+
+<html>
+    <body onload="doSomething()">
+        <script>
+            window.onload = function() {
+                // Algún código
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Eventos2 Ejemplo -->
+
+<html>
+    <body>
+        <input type="text" id="name" onchange="change()">
+        <script>
+            function change() {
+                var x = document.getElementById("name");
+                x.value = x.value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Oyentes de eventos -->
+<html>
+    <body>
+        <script>
+            element.addEventListener("click", myFunction);
+element.addEventListener("mouseover", myFunction);
+
+function myFunction() {
+  alert("Hello World!");
+}
+        </script>
+    </body>
+</html>
+
+<!-- Oyentes de eventos2 -->
+
+<html>
+    <body>
+        <button id="demo7">Iniciar</button>
+        <script>
+            var btn = document.getElementById("demo7");
+            btn.addEventListener("click, my fuction");
+
+            function myFunction() {
+                alert(Math.random());
+                btn.removeEventListener("click", myfunction);
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Capturar vs burbujear -->
+
+<html>
+    <body>
+        <script>
+            //Captura de propagación
+            elem1.addEventListener("click", myFunction, true); 
+            //Burbuja de propagación
+            elem2.addEventListener("click", myFunction, false);
+
+        </script>
+    </body>
+</html>
+
+<!-- Control deslizante de imagen -->
+
+<html>
+    <body>
+        <div>
+            <button> Prev </button>
+            <img id="Control"
+        src="http://www.sololearn.com/uploads/slider/1.jpg"
+            width="200px" height="100px"/>
+            <button>Next </button>
+        </div>
+        <script>
+            var images = [
+   "http://www.sololearn.com/uploads/slider/1.jpg", 
+   "http://www.sololearn.com/uploads/slider/2.jpg", 
+   "http://www.sololearn.com/uploads/slider/3.jpg"
+];
+        </script>
+    </body>
+</html>
+
+<!-- Control deslizante de imagen 2 -->
+
+<html>
+    <body>
+        <div>
+            <button onclick="prev()"> Prev </button>
+            <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg" 
+              width="200px" height="100px"/>
+            <button onclick="next()"> Next </button>
+          </div>
+          <script>
+              var  images = [
+   "http://www.sololearn.com/uploads/slider/1.jpg", 
+   "http://www.sololearn.com/uploads/slider/2.jpg", 
+   "http://www.sololearn.com/uploads/slider/3.jpg"
+          ],
+          var num = 0;
+
+          function Next() {
+              var slider = document.getElementById("slider");
+              num++;
+              if(num >= images.length) {
+                  num = 0;
+              }
+              slider.src = images[num];
+          }
+
+          function prev(){
+              var slider = document.getElementById("slider");
+                num--;
+                if(num < 0) {
+                    num = images.length-1;
+                }
+                slider.src = images[num]
+          }
+          </script>
+    </body>
+</html>
+
+<!-- Validación de formulario -->
+
+<html>
+    <body>
+        <form onsubmit="return validate()" method="post">
+            Number: <input type="text" name="num1" id="num1" />
+            <br />
+            Repeat: <input type="text" name="num2" id="num2" />
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
+          <script>
+              function validate(){
+                  var n1 = document.getElementById("num1");
+                  var n2 = document.getElementById("num2");
+                  if(n1.value != "" && n2.value != "") {
+                      if(n1.value == n2.value) {
+                          return true;
+                      }
+                  }
+              alert("Los valores deben ser iguales y no en blanco");
+              return false;
+                }
+          </script>
+    </body>
+</html>
+
+<!-- ECMAScript 6 -->
+
+<html>
+    <body>
+    </body>
+    <script>
+        var a = 10;
+        const b = "hello";
+        let c = true;
+
+        if (true) {
+            let name = "Jack";
+        }
+        alert(name); //genera un error
+
+        function varTest() {
+            var x = 1;
+            if (true)
+                var x = 2; // same variable
+                console.log(x); //2
+            }
+            console.log(x); //2
+
+        function lefTest() {
+            let x = 1;
+            if (true) {
+                let x = 2; //different variable
+                console.log(x); // 2
+            }
+            console.log(x); // 1
+        }
+    </script>
+</html>
+
+<!-- ECMAScript 6 -->
+<html>
+    <body>
+        <script>
+            const a = "hello";
+            a = "Bye";
+        </script>
+    </body>
+</html>
+
+<!-- Literales de plantilla en ES6 -->
+
+<html>
+    <body>
+        <script>
+            let name = "Cristian";
+            let msg = "Welcome" + name + "!";
+            console.log(msg);
+        </script>
+    </body>
+</html>
+
+<!-- Literales de plantilla en ES6 2 -->
+
+<html>
+    <body>
+        <script>
+            let name = "Cristian";
+            let msg = "Welcome ${name}!";
+            console.log(msg);
+
+            let a = 8;
+            let b = 34;
+            let msg = "La Suma es ${a+b}";
+            console.log(msg);
+        </script>
+    </body>
+</html>
+
+<!-- Bucles en ECMAScript 6 -->
+<html>
+    <body>
+        <script>
+            let arr= [1, 2, 3];
+            for (let k = 0; k < arr.length; k++) {
+                console.log(arr[k])
+            }
+            let obj = {a: 1, b: 2, c: 3};
+            for (let v in obj) {
+                console.log(v);
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Bucles en ECMAScript 6 parte 2-->
+
+<html>
+    <body>
+        <script>
+            let list = ["X", "y", "z"];
+            for ( let val of list) {
+                console.log(val);
+            }
+
+            for (let ch of "HOLA") {
+                conso.log(ch);
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Bucles en ECMAScript 6 parte 2-->
+
+<html>
+    <body>
+        <script>
+            function add(x, y) {
+                var sum = x + y;
+                console.log(sum);
+            }
+            const add = (x, y) => {
+                let sum = x + y;
+                console.log(sum);
+            }
+            const greet = x=> "Bienvenido" + x;
+            const x = () => alert("H1");
+
+            var arr = [2, 3, 7, 8];
+            arr.forEach(function(el){
+                console.log(el * 2);
+            
+            });
+        </script>
+    </body>
+</html>
+
+<!-- Parámetros predeterminados en ES6 -->
+
+<html>
+    <body>
+        <script>
+            function test(a, b = 3, c = 42) {
+                return a + b +c;
+            }
+            console.log(test(5)); // 50
+
+            const test = (a, b = 3, c = 42) => {
+  return a + b + c;
+}
+console.log(test(5)); //50 
+        </script>
+    </body>
+</html>
+
+<!-- bjetos ES6 -->
+
+<html>
+    <body>
+        <script>
+            let tree = {
+                height: 10,
+                color: "green",
+                grow() {
+                    this.height += 2;
+                }
+            };
+            tree.grow();
+            console.log(tree.height); // 12
+
+            let height = 5;
+            let health = 100;
+
+            let athlete = {
+                height,
+                health
+            };
+        </script>
+    </body>
+</html>
+
+<!-- Nombres de propiedades calculados -->
+<html>
+    <body>
+        <script>
+            let prop = "name";
+            let id= "1234";
+            let mobile = "08923";
+
+            let user = {
+                [prop]: "Toro",
+                ["user_${id}"]: "${mobile}"
+
+            };
+        </script>
+    </body>
+</html>
+
+<!-- Nombres de propiedades calculados Ejemplo 2-->
+
+<html>
+    <body>
+        <script>
+            var i = 0;
+            var a = {
+                ["foo" + ++i]: i,
+                ["foo" + ++i]: i,
+                ["foo" + ++i]: i
+            };            
+        </script>
+    </body>
+</html>
+
+<!-- Nombres de propiedades calculados Ejemplo 3-->
+
+<html>
+    <body>
+        <script>
+            var param = "size";
+            var config = {
+                [param]: 12,
+                ["mobile" + param.charAt(0).toUpperCase() + param.slice(1)]: 4
+            };
+            console.log(config.mobileSize);
+        </script>
+    </body>
+</html>
+
+<!-- Object.assign() in ES -->
+<html>
+    <body>
+        <script>
+            let person = {
+                name: "Camilo",
+                age: 17,
+                sex: "Masculino"
+            };
+            let student = {
+                name: "Bob",
+                age: 20,
+                xp: "2",
+            };
+            let newStudent = Object.assign( {}, person, student);
+        </script>
+    </body>
+</html>
+
+<!-- Object.assign() in ES Parte 2-->
+<html>
+    <body>
+        <script>
+            let person = {
+                name: "Jack",
+                age: 18
+            };
+
+            let newPerson = person; // newperson references person
+            newPerson.name = "Bob";
+
+            console.log(person.name); //Cristian
+            console.log(newPerson.name); //Camilo
+        </script>
+    </body>
+</html>
+
+<!-- Object.assign() in ES Parte 3-->
+
+<html>
+    <body>
+        <script>
+            let person = {
+                name: "Cristian",
+                age: 17
+            };
+
+            let newPerson = Object.assign({}, person, {name: "Bob"});
+        </script>
+    </body>
+</html>
+
+<!-- Desestructuración de matrices en ES6 -->
+
+<script>
+    let arr = ["1", "2", "3"];
+    let [one, two, three] = arr;
+
+    console.log(one); // 1
+    console.log(two); // 2
+    console.log(three); //3
+</script>
+
+<!-- Desestructuración de matrices en ES6 Ejemplo -->
+<script>
+let a, b, c = 4, d = 8
+[a, b = 6] = [2]; //a = 2, b = 6
+[c, d] = [d, c]; // c = 8, d = 4
+</script>
+
+<!-- Desestructuración de objetos en ES6 -->
+
+<html>
+    <script>
+        let obj = {h:100, s: true};
+        let {h,s} = obj;
+
+        console.log(h); //100
+        console.log(s); //true
+    </script>
+</html>
+
+<!-- Desestructuración de objetos en ES6 Ejemplo-->
+
+<html>
+    <body>
+        <script>
+            let a, b;
+            ({a,b} = {a: "Hello", b: "Cristian"});
+            console.log(a + b); // Hola Crsitian
+        </script>
+    </body>
+</html>
+
+<!-- Parámetros de descanso de ES6 -->
+<html>
+    <body>
+        <script>
+            function containsAll(arr) {
+                for (let k = 1; k < arguments.length; k++){
+                    let num = arguments[k];
+                    if (arr.indexOf(num) === -1) {
+                        return false;
+                    }
+                }
+            return true;
+            }
+            let x = [2, 4, 6, 7];
+            console.log(containsAll(x, 2, 4, 7));
+            console.log(contaisAll(x, 6, 4, 9));
+        </script>
+    </body>
+</html>
+<!-- Parámetros de descanso de ES6 -->
+<html>
+    <body>
+        <script>
+            function containsAll(arr, ...nums){
+                for (let num of nums) {
+                    if (arr.indexOf(num) === -1){
+                        return false;
+                    }
+                }
+            return true;
+            }
+        </script>
+    </body>
+</html>
+
+<!-- La operadora de propagación -->
+<html>
+    <body>
+        <script>
+            function myFunction( w, x, y, z) {
+                console.log(w + x + y + z);
+            }
+            var args = [1, 2, 3];
+            myFunction.apply(null, args.concat(4));
+
+            const myFunction = (w, x, y, z) => {
+                console.log(w + x + y + z);
+            };
+
+            let args = [1, 2, 3];
+            myFunction(...args, 4);
+
+            var dateFields = [1970, 0, 1]; // 1 Jan 1970
+            var date = new Date(...dateFields);
+            console.log(date);
+        </script>
+    </body>
+</html>
+
+<!-- La operadora de propagación Ejemplo 2 -->
+
+<script>
+    const obj1 = {foo: "bar", x: 42};
+    const obj2 = { foo: "baz", y: 5};
+    const merge = (...objects) => ({...objects});
+
+    let mergebObj = merge(obj1, obj2);
+    // { 0: { foo: "bar", x: 42}, 1: {foo: "baz" , y: 5}
+    let mergedObj2 = merge({}, obj1, obj2);
+    // { 0: { foo: "bar", x: 42}, 1: {foo: "baz" , y: 5}
+</script>
+
+<!-- La operadora de propagación Ejemplo 2 -->
+
+<html>
+    <body>
+        <script>
+            class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+const square = new Rectangle(5, 5);
+const poster = new Rectangle(2, 3);
+
+var Square = class Rectangle {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+};
+
+var Square = class {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+};
+        </script>
+    </body>
+</html>
+
+<!-- Métodos de clase en ES6 -->
+
+<html>
+    <body>
+        <script>
+            class Rectangle {
+                constructor(height, width) {
+                    this.height = height;
+                    this.width = width;
+                }
+                get area() {
+                    return this.calcArea();
+                }
+                calcArea() {
+                    return this.height * this.width;
+                }
+            }
+
+            const square = new Rectangle(5, 5);
+            console.log(square.area); //25
+        </script>
+    </body>
+</html>
+
+<!-- Métodos de clase en ES6 Parte 2 -->
+
+<html>
+    <body>
+        <script>
+            class Point {
+                constructor(x, y) {
+                    this.x = x;
+                    this.y = y;
+                }
+                static distance(a, b) {
+                    const dx = a.x - b.x;
+                    const dy = a.y - b.y;
+                    return Math.hypot(dx, dy);
+                }
+            }
+            const p1 = new Point(7, 2);
+            const p2 = new Point(3, 8);
+            console.log(Point.distance(p1, p2));
+        </script>
+    </body>
+</html>
+
+<!-- Herencia en ES6 -->
+
+<html>
+    <body>
+        <script>
+            class Animal {
+                constructor(name) {
+                    this.name = name;
+                }
+                speak(){
+                    console.log(this.name + "makes a noise.");
+                }
+            }
+
+            class Dog extends Animal {
+                speak() {
+                    console.log(this.name + "barks");
+                }
+            }
+            let dog = new Dog ("Rex");
+            dog.speak();
+        </script>
+    </body>
+</html>
+
+<!-- Herencia en ES6 -->
+<html>
+    <body>
+        <script>
+            let map = new map ([["k1", "v1"],["k2", "v2"]]);
+            console.log(map.size); //2
+        </script>
+    </body>
+</html>
+
+<!-- Herencia en ES6 Parte 2-->
+
+<script>
+    let map = new Map();
+
+    map.set("k1", "v1").set("k2","v2");
+    console.log(map.get("k1")); //v1
+    console.log(map.has("k2")); // true
+    for (let kv of map.entries())
+    console.log(kv[0] + ":"+ kv [1]);
+</script>
+
