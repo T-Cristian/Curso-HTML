@@ -1954,3 +1954,66 @@ var Square = class {
 </html>
 
 <!-- Iteradores y generadores -->
+
+<html>
+    <body>
+        <script>
+            let myIterable0bj = {
+                [Symbol.iterator] : function* () {
+                    yield 1; yield 2; yield 3;
+                
+                console.log([...myIterableObj]);
+            }
+        }
+        </script>
+    </body>
+</html>
+
+<!-- Iteradores y generadores -->
+<html>
+    <body>
+        <script>
+            function* idMaker() {
+                let index = 0;
+                while (index < 5)
+                yield index++;
+            }
+            var gen = idMaker();
+            console.log(gen.next().value);
+        </script>
+    </body>
+</html>
+
+<!-- Modules -->
+
+<html>
+    <body>
+        <script>
+// lib/math.js
+export ​let sum = (x, y) => { return x + y; }
+
+export ​let pi = 3.14
+
+
+// app.j
+
+import * ​as math from "lib/mat"
+console.log(`2p = + ${math.sum(math.pi, math.pi)}`)
+
+        </script>
+    </body>
+</html>
+
+<!-- Búsqueda de elementos de matriz -->
+
+<html>
+    <body>
+        <script>
+            [4, 5, 1, 8, 2, 0].filter(function (x) {
+                return x > 3;
+            }) [0]
+
+            console.log(Array(3 + 1). join("foo")); // foofoofoo
+        </script>
+    </body>
+</html>
